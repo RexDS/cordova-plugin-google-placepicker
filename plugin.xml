@@ -30,9 +30,9 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <header-file src="src/ios/GooglePlacePickerPlugin.h" />
         <source-file src="src/ios/GooglePlacePickerPlugin.m" />
 
-        <framework src="GoogleMaps" type="podspec" spec="~> 2.4"/>
-        <framework src="GooglePlaces" type="podspec" spec="~> 2.4"/>
-        <framework src="GooglePlacePicker" type="podspec" spec="~> 1.2"/>
+        <framework src="GoogleMaps" type="podspec" spec="~> 2.3"/>
+        <framework src="GooglePlaces" type="podspec" spec="~> 2.3"/>
+        <framework src="GooglePlacePicker" type="podspec" spec="~> 2.3"/>
     </platform>
 
 </plugin>
