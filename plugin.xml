@@ -1,0 +1,37 @@
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+xmlns:android="http://schemas.android.com/apk/res/android"
+           id="cordova-plugin-google-placepicker"
+      version="1.0.0">
+
+    <name>GooglePlacePickerPlugin</name>
+    <description>Cordova plugin for Google Place Picker</description>
+    <license>MIT</license>
+    <keywords>cordova place placepicker</keywords>
+    <repo>https://github.com/RexDS/cordova-plugin-google-placepicker</repo>
+    <issue>https://github.com/RexDS/cordova-plugin-google-placepicker/issues</issue>
+
+    <js-module src="www/GooglePlacePicker.js" name="GooglePlacePicker">
+        <merges target="plugins.google.placepicker" />
+    </js-module>
+
+    <engines>
+        <engine name="cordova" version=">=6.0.0"/>
+    </engines>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="GooglePlacePicker">
+                <param name="ios-package" value="GooglePlacePickerPlugin" />
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/GooglePlacePickerPlugin.h" />
+        <source-file src="src/ios/GooglePlacePickerPlugin.m" />
+
+        <framework src="GoogleMaps" type="podspec" spec="~> 2.4"/>
+        <framework src="GooglePlaces" type="podspec" spec="~> 2.4"/>
+        <framework src="GooglePlacePicker" type="podspec" spec="~> 1.2"/>
+    </platform>
+
+</plugin>

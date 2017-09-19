@@ -1,0 +1,33 @@
+{
+  "name": "cordova-plugin-google-placepicker",
+  "version": "1.0.0",
+  "description": "Cordova plugin for Google Place Picker",
+  "cordova": {
+    "id": "cordova-plugin-google-placepicker",
+    "platforms": [
+      "ios"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RexDS/cordova-plugin-google-placepicker.git"
+  },
+  "author": "Max Nosko <nopasaran@gmail.com> (https://github.com/RexDS)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RexDS/cordova-plugin-google-placepicker/issues"
+  },
+  "homepage": "https://github.com/RexDS/cordova-plugin-google-placepicker#readme",
+  "keywords": [
+    "cordova",
+    "phonegap",
+    "google",
+    "places",
+    "place",
+    "picker"
+  ],
+  "scripts": {
+    "version": "replace -s 'version=\"(.+)(?=\">)' 'version=\"'$npm_package_version plugin.xml && git add plugin.xml",
+    "postversion": "git push && git push --tags"
+  }
+}
